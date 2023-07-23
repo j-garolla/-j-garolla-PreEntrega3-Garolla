@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Dancing+Script:wght@400;700&family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+//import variables
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: $fondo;
+}
+
+
+.container {
+    @include container(grid, 150vh, 11px, 500%);
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+
+.box1 {
+    grid-row: span 15; 
+    height: 150px;
+    text-align: center;
+    grid-row: span 10; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.sub-box1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black; 
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Bungee Shade', cursive;
+    color:$titulo-1;
+}
+
+#logo-jgstudios {
+    width:90px;
+    height:90px;
+}
+
+.box2 {
+    grid-row: span 10;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: $text-menu-footer;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: Bungee Inline;
+  
+    li {
+      padding: 10px 60px;
+  
+      &:hover {
+        background-color: $footer;
+        border-radius: 50px;
+      }
+    }
+  }
+
+.box3 {
+    grid-row: span 40; 
+    height: 500px;
+    grid-row: span 50;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 23px;
+}
+
+.sub-box {
+    background-color: #FFC300;
+    width: 1100px; 
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF1CE; 
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-family: Russo One;
+}
+
+.square {
+    width: 490px;
+    height: 87px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: Russo One;
+}
+
+
+#sub-box1 {
+    background-color: #FF6584;
+
+}
+
+#sub-box2 {
+    background-color: #66CDAA;
+    font-weight: lighter;
+}
+
+#sub-box3 {
+    background-color: #FF69B4;
+}
+#sub-box4 {
+    background-color: #9370DB;
+}
+
+#sub-box6 {
+    background-color: #FFA07A;
+    border-radius: 50px;
+    border: 10px solid #FFA07A;
+}
+
+#logo_peggy {
+    width:145px;
+    height:88px;
+}
+
+#texto-peggy {
+    text-align: start;
+}
+
+#logo_romeo {
+    width:165px;
+    height:95px;
+}
+#texto-romeo {
+    text-align: start;
+}
+
+#logo_separador {
+    width:350px;
+    height:110px;
+}
+.square-1 {
+    width: 490px;
+    height: 87px; 
+    margin-right: 10px;
+    font-size: 21px;
+    font-family: Russo One;
+}
+.square-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px; 
+    height: 97px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.form {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 32px; 
+    width: 100%; 
+    height: 40vh;
+    border: 20px solid #FEFBE9;
+}
+
+#edad {
+    font-size: 20px;
+    font-family: Russo One;
+    color: #FF6584;
+    font-weight: lighter;
+}
+
+input, textarea {
+    background-color: #ffd700;
+    width: 75%;
+    height: 10%;
+    border-radius: 59px;
+    font-family: Russo One;
+    text-align: center;
+    border: 1px solid #ffd700;
+    font-size: 16px;
+}
+.input-last {
+    width: 75%;
+    height: 10%;
+    background-color:#ffd700;
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+}
+#button-enviar {
+    background-color:#33A8FF;
+    display: flex;
+    align-items: center;
+    display: flex;
+    height: 10%;
+    text-align: center;
+    border: 1px solid #FEFBE9;
+    border-radius: 50px;
+}
+#send {
+    text-align: center;
+    border: 8px solid #33A8FF;
+    border-radius: 50px;
+    font-family: Russo One;
+    color: #FFF1CE;
+    font-size: 22px;
+
+}
+
+.box4 {
+    background-color: $footer;
+    grid-row: span 10;
+    height: 63px;
+}
+.list2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Bungee Inline;
+    color: $text-menu-footer;
+}
+
+.list2 {
+    li {
+    padding: 10px 40px;
+    height: auto;
+    }
+}
+
+#fb-logo {
+    width:25px;
+    height:25px;
+}
+
+#insta-logo {
+    width:25px;
+    height:25px;
+}
+
+.box6 {
+    color: #FFF1CE;
+    font-weight: lighter;
+    font-family: Russo One;
+    text-align: start;
+    font-size: 20px;
+    width: 100%;
+}
+
+.box6 td {
+padding: 50px;
+
+    border-collapse: collapse;
+}
+
+.box-6 td:not(:last-child) {
+
+}
+
+.table li {
+
+}
+.title-table {
+    font-size: 25px;
+    font-family: Bungee Inline;
+}
+
+@media (max-width: 768px)  { 
+.sub-box1 {font-size: 16px; width: 200px; height: 100px;}
+#sub-box1 { background-color: #FF6584; width: 500px; font-size: 18px;  } 
+#title-1 { }
+#logo-jgstudios {display: none;}
+#log-in {width: 40px; height: 10pxs;  }
+.grid-container {display: flex; flex-direction: column; }
+.box1 {display: flex; flex-direction: column; }
+
+
+.list {margin: auto;  width: 400px;}
+.list li { margin-bottom: 5px; padding: 1%;}
+#index {font-size: 13px}
+#contacto {font-size: 13px}
+#nosotros {font-size: 13px}
+#novedades {font-size: 13px}
+#tienda {font-size: 13px}
+
+.square {; font-size: 15px; width: 460px; height: 100px; justify-content: start; font-weight: lighter;}
+#sub-box2 {background-color: #6CDAAF; width: 500px; font-size: 6px;}
+#sub-box3 {background-color: #FF69B4; width: 500px; font-size: 6px; } 
+.square-2 {font-size: 16px;}
+#logo_separador {width: 245px; height: 80px;}
+#sub-box4 {background-color: #9370DB; width: 500px; font-size: 6px;} 
+.square-1 {font-size: 14px;}
+#sub-box6 {background-color: #FFA07A; width: 200px;; font-size: 10px; border: 1px solid #FEFBE9;} 
+.title-table {font-size: 15px;}
+
+.box4 { height: 50px; background-color: #FEFBE9;}
+.list2 {flex-direction: column;}
+
+}
+@media (max-width: 454px) {
+
+.sub-box1 { font-size: 13px; width: 200px; height: 100px;}
+ #sub-box1 { width: 500px; font-size: 18px;  } 
+ #title-1 { }
+#logo-jgstudios {display: none;}
+#log-in {width: 40px; height: 10pxs;  }
+.grid-container {display: flex; flex-direction: column; }
+.box1 {display: flex; flex-direction: column; }
+
+.list {margin: auto;  width: 250px;}
+.list li { margin-bottom: 5px; padding: 1%;}
+#index {font-size: 10px}
+#contacto {font-size: 10px}
+#nosotros {font-size: 10px}
+#novedades {font-size: 10px}
+#tienda {font-size: 10px}
+
+#sub-box1 {font-size: 12px; width: 350px;}
+.square { font-size: 12px; width: 820px; height: 80px; justify-content: start; font-weight: lighter;}
+#sub-box2 { width: 350px; }
+#sub-box3 { width: 350px;  } 
+.square-2 {font-size: 12px;}
+#logo_separador {width: 245px; height: 80px;}
+#sub-box4 { width: 350px; } 
+.square-1 {font-size: 12px;}
+#sub-box6 {background-color: #FEFBE9} 
+.title-table {;font-size: 12px; font-weight: lighter; border:#FEFBE9;}
+#sub-box6 {color: #9370DB;}
+
+.box4 { height: 60px; background-color: #FEFBE9;}
+.list2 {flex-direction: column;}
+
+}

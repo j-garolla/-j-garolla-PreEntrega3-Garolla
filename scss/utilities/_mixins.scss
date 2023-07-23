@@ -1,0 +1,6 @@
+@mixin container($display, $grid-template-columns, $gap, $max-width) {
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    gap: $gap;
+    max-width: $max-width;
+  }
