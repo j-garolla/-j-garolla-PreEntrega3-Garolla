@@ -20,7 +20,7 @@
         <div class="box box2">
             <ul class="list">
                 <li id="index"><a href="../index.html" class="index">Inicio</a></li>
-                <li id="contacto"><a href="./contacto.html" class="contacto">Contacto</a></li>
+                <li class="select select-color2" id="contacto"><a href="./contacto.html" class="contacto">Contacto</a></li>
                 <li id="nosotros"><a href="./nosotros.html" class="nosotros">Nosotros</a></li>
                 <li id="novedades"><a href="./novedades.html" class="novedades">Novedades</a></li>
                 <li id="tienda"><a href="./tienda.html" class="tienda">Tienda</a></li>
@@ -31,17 +31,19 @@
             <div class="sub-box" id="sub-box1">
                 <h2>Rellena el formulario con tus datos:</h2>
             </div>
-                <div class="form">
-                    <!-- <input type="text" class="input-last placeholder="Input 1"> -->
-                    <input type="text" class="input-last" placeholder="Nombre de Usuario" required>
-                    <input id="email" type="email" required placeholder="cliente@gmail.com" class="input-last">
-                    <input id="number" type="number" min="18" max="110" required placeholder="30">
-                    <!-- <input type="text" class="input-last" placeholder="Input 5"> -->
-                    <textarea rows="2" cols="62" placeholder="Motivo de tu mensaje..."></textarea>
-                    <!-- <input type="text" class="input-last" placeholder="Input 6"> -->
-                    <!-- I accept the <a href="https://www.termsandcondition12345678"> terms and conditions</a>
-      <input type="checkbox" value="1" required/> -->
-                    <button type="submit" id="button-enviar"><p id="send">Enviar</p></button>
+            <form action="">
+                <div class="form" id="form">
+                    <input type="text" class="input-last" name="Usuario" placeholder="Nombre de Usuario" required list="nombresSugeridos">
+            <datalist id="nombresSugeridos">
+                <option value="PequeñoCoderCurioso">
+                <option value="MiniMaestroDelCódigo">
+                <option value="Programador_Chispitas">
+                <option value="Código_Alegre123"></option>
+            </datalist>
+                    <input id="email" type="email" placeholder="cliente@gmail.com" class="input-last" required >
+                    <input id="number" type="number" min="18" max="110" placeholder="Edad: 30" required >
+                    <textarea rows="2" cols="62" placeholder="Motivo de tu mensaje..." required></textarea> </form>
+                    <form action="" method="post"><button type="submit" id="button-enviar"><p>Enviar</p></button></form>
                 </div>
             </div>
 

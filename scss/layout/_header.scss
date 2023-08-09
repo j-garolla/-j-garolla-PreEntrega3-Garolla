@@ -1,0 +1,20 @@
+.box1 {
+    height: 150px;
+    text-align: center;
+    grid-row: span 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+  }
+  
+  .sub-box1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Bungee Shade', cursive;
+    color: #33A8FF;
+  }
